@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>PROJECT: MINESWEEPER!</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/ad67fc8185.js" crossorigin="anonymous"></script>
+
+    </head>
+    
+    <body onload="startPage()">
+
+        <h1>Minesweeper</h1>
+        <div class="main">
+            <h3 class="timer">00:00</h3>
+        
+            <button class="easy" onclick="initGame(this)">Easy</button>
+            <button class="medium" onclick="initGame(this)">Medium</button>
+            <button class="hard" onclick="initGame(this)">Hard</button>
+            
+            <div class="hints">
+                <p class="hint1" onclick="getHint(this)"><i class="fas fa-lightbulb"></i></p> 
+                <p class="hint2" onclick="getHint(this)"><i class="fas fa-lightbulb"></i></p> 
+                <p class="hint3" onclick="getHint(this)"><i class="fas fa-lightbulb"></i></p>
+            </div>
+            
+            
+            <div class="table" oncontextmenu="return false;">
+                <table class="board">
+              
+                </table>
+            </div>
+          
+        </div>
+        
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/main.js"></script>    
+
+    </body>
+    
+    
+</html>    

@@ -1,0 +1,29 @@
+.btn{
+    width: 30px;
+    height:30px;
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+}
+
+.hidden{
+    color: transparent ;
+}
+
+.main{
+    text-align: center;
+}
+
+.table{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+
