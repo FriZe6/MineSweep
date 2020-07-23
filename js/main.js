@@ -77,7 +77,7 @@ function initGame(elButton){
         gLevel.SIZE=12 
         gLevel.MINES=30
     } 
-    renderFooter()
+    
     gBoard=buildBoard(gLevel.SIZE, gLevel.MINES)
     renderBoard(gBoard)      
 }
