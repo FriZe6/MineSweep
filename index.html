@@ -1,50 +1,32 @@
-<html>
-    <head>
-        <title>PROJECT: MINESWEEPER!</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/main.css">
-        <script src="https://kit.fontawesome.com/ad67fc8185.js" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mine-Sweeper!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/bomb.png">
+  </head>
+  <body onmousedown="cellClicked(event)">
+    <div class="row game">
+      <div class="column">
+        <h1>Mine Sweeper!</h1>
+        <p>Press the 'Middle Mouse Button' to restart.</p>
+        <div class="win-lose-text"><h2></h2></div>
+        <br>
+        <h3 class="timer">00:00</h3>
 
-    </head>
-    
-    <body onload="startPage()">
-
-      
-        <div class="header">
-            <h1>MINESWEEPER</h1>
-            <h3 class="timer">00:00</h3>
-            <div class="first-row">
-                
-                <button class="restart" onclick="initGame(this)">🙂</button>     
-            </div>
-            
-        
-            <button class="diff easy" onclick="initGame(this)">Easy</button>
-            <button class="diff medium" onclick="initGame(this)">Medium</button>
-            <button class="diff hard" onclick="initGame(this)">Hard</button>
-            <button class="safe" onclick="safeClick()">SAFE 3</button>
-            
-            <div class="third-row">
-                
-                <div class="hints"> </div>
-                
-                <div class="lives"></div>
-            </div>
-            
-            
-            <div class="table" oncontextmenu="return false;">
-                <table class="board">
-              
-                </table>
-               
-            </div>
+        <button class="diff-btn" onclick="setDifficulty(this)">Easy!</button>
+        <button class="diff-btn" onclick="setDifficulty(this)">Meduim!</button>
+        <button class="diff-btn" onclick="setDifficulty(this)">Hard!</button>
+        <h3 onclick="setDifficulty()" class="emoji"></h3>
+      </div>
+      <div class="column">
+        <div class="mine-field"></div>
+      </div>
     </div>
-  
 
-        <script src="js/utils.js"></script>
-        <script src="js/main.js"></script>    
-
-    </body>
-    
-    
-</html>    
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
